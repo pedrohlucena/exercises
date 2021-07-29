@@ -80,7 +80,7 @@ inicio
                     caso 1 // ele quer ver os pares
                          se (i % 2 = 0) entao // i/f são pares
                             escreva(i, " É um número par!")
-                         sena // i/f são ímpares
+                         senao // i/f são ímpares
                               escreva(i, "NÃO É um número par!")
                          fimse
                     caso 2 // ele quer ver os números ímpares
