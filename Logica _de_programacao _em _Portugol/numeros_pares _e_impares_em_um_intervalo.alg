@@ -1,96 +1,96 @@
-algoritmo "semnome"
-// Função :
+algoritmo "Pares e Ã­mpares em um intervalo"
+// FunÃ§Ã£o :
 // Autor :
 // Data : 27/07/2021
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
    f,i: inteiro
    opcao, C: inteiro
 inicio
-// Seção de Comandos 
-         // Ler início e fim de um intervalo e perguntar ao usuário se ele quer ver os números pares ou ímpares, dentro daquele intervalo
+// SeÃ§Ã£o de Comandos 
+         // Ler inÃ­cio e fim de um intervalo e perguntar ao usuÃ¡rio se ele quer ver os nÃºmeros pares ou Ã­mpares, dentro daquele intervalo
          // O programa deve funcionar para contagens progressivas / negativas
-         escreva("Início do intervalo: ")
+         escreva("InÃ­cio do intervalo: ")
          leia(i)
          escreva("Fim do intervalo: ")
          leia(f)
-         escreval("Você quer ver os pares ou ímpares entre ", i, " e ", f, "? Digite:")
+         escreval("VocÃª quer ver os pares ou Ã­mpares entre ", i, " e ", f, "? Digite:")
          escreval("[1] para PARES")
-         escreval("[2] para ÍMPARES")
-         escreva("Sua opção: ")
+         escreval("[2] para ÃMPARES")
+         escreva("Sua opÃ§Ã£o: ")
          leia(opcao)
          
          se (f > i) entao // contagem progressiva
             escolha opcao
                     caso 1 // ele quer ver os pares
-                         se (i % 2 = 0) entao // i é par
+                         se (i % 2 = 0) entao // i Ã© par
                             para C <- i ate f passo 2 faca
                                  escreval(C , ".. ")
                             fimpara
-                         senao // i é impar
+                         senao // i Ã© impar
                                i <- i + 1
                                para C <- i ate f passo 2 faca
                                     escreva(C, ".. ")
                                fimpara
                          fimse
-                    caso 2 // ele quer ver os ímpares
-                         se (i % 2 = 0) entao // i é par
+                    caso 2 // ele quer ver os Ã­mpares
+                         se (i % 2 = 0) entao // i Ã© par
                             i <- i + 1
                             para C <- i ate f passo 2 faca
                                  escreva(C, ".. ")
                             fimpara
-                         senao // i é impar
+                         senao // i Ã© impar
                                para C <- i ate f passo 2 faca
                                     escreva(C, ".. ")
                                fimpara
                          fimse
-                    outrocaso // opção inválida
-                              escreva("Opção inválida!")
+                    outrocaso // opÃ§Ã£o invÃ¡lida
+                              escreva("OpÃ§Ã£o invÃ¡lida!")
             fimescolha
          senao
               se (i > f) entao // contagem regressiva
                  escolha opcao
                          caso 1 // ele quer ver os pares
-                              se (i % 2 = 0) entao // i é par
+                              se (i % 2 = 0) entao // i Ã© par
                                  para C <- i ate f passo -2 faca
                                       escreva(C, ".. ")
                                  fimpara
-                              senao // i é impar
+                              senao // i Ã© impar
                                     i <- i - 1
                                     para C <- i ate f passo -2 faca
                                          escreva(C, ".. ")
                                     fimpara
                               fimse
-                         caso 2 // ele quer ver os ímpares
-                              se (i % 2 = 0) entao // i é par
+                         caso 2 // ele quer ver os Ã­mpares
+                              se (i % 2 = 0) entao // i Ã© par
                                  i <- i - 1
                                  para C <- i ate f passo -2 faca
                                       escreva(C, ".. ")
                                  fimpara
-                              senao // i é impar
+                              senao // i Ã© impar
                                     para C <- i ate f passo -2 faca
                                          escreva(C, ".. ")
                                     fimpara
                               fimse
-                         outrocaso // opção inválida
-                                   escreva("Opção inválida!")
+                         outrocaso // opÃ§Ã£o invÃ¡lida
+                                   escreva("OpÃ§Ã£o invÃ¡lida!")
                  fimescolha
               senao // i = f
-                    escreva("O início do intervalo é idêntico ao fim")
+                    escreva("O inÃ­cio do intervalo Ã© idÃªntico ao fim")
                     caso 1 // ele quer ver os pares
-                         se (i % 2 = 0) entao // i/f são pares
-                            escreva(i, " É um número par!")
-                         sena // i/f são ímpares
-                              escreva(i, "NÃO É um número par!")
+                         se (i % 2 = 0) entao // i/f sÃ£o pares
+                            escreva(i, " Ã‰ um nÃºmero par!")
+                         sena // i/f sÃ£o Ã­mpares
+                              escreva(i, "NÃƒO Ã‰ um nÃºmero par!")
                          fimse
-                    caso 2 // ele quer ver os números ímpares
-                         se (i % 2 = 0) entao // i/f são oares
-                            escreva(i, " NÃO É um ÍMPAR!")
-                         senao // i/f são ímpares
-                              escreva(i, " É um número ímpar")
+                    caso 2 // ele quer ver os nÃºmeros Ã­mpares
+                         se (i % 2 = 0) entao // i/f sÃ£o oares
+                            escreva(i, " NÃƒO Ã‰ um ÃMPAR!")
+                         senao // i/f sÃ£o Ã­mpares
+                              escreva(i, " Ã‰ um nÃºmero Ã­mpar")
                          fimse
-                    outrocaso // opção inválida
-                              escreva("Opção inválida!")
+                    outrocaso // opÃ§Ã£o invÃ¡lida
+                              escreva("OpÃ§Ã£o invÃ¡lida!")
               fimse
          fimse
 fimalgoritmo
