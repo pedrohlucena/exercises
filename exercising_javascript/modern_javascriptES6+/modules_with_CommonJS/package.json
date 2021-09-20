@@ -1,0 +1,18 @@
+{
+  "name": "1vez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2"
+  }
+}
